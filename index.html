@@ -5,181 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NOODLEZ3D</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;}
-
-    body{
-      font-family:'Inter',sans-serif;
-      background:#0e0e0e;
-      color:#f5f5f5;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
     }
 
-    nav{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:18px 32px;
-      border-bottom:1px solid #222;
+    body {
+      background: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    nav h1{
-      font-family:'Oswald',sans-serif;
-      letter-spacing:2px;
-      font-size:20px;
+    /* Top bar */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 30px;
+      font-size: 12px;
+      letter-spacing: 1px;
     }
 
-    nav a{
-      color:#aaa;
-      text-decoration:none;
-      margin-left:20px;
-      font-size:14px;
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
     }
 
-    .hero{
-      padding:80px 32px;
-      max-width:1000px;
-      margin:auto;
+    .nav {
+      display: flex;
+      gap: 20px;
     }
 
-    .hero h2{
-      font-family:'Oswald',sans-serif;
-      font-size:64px;
-      line-height:0.95;
+    /* Center content */
+    .center {
+      text-align: center;
     }
 
-    .hero span{
-      color:#ff7a00;
+    .brand {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
 
-    .hero p{
-      margin-top:20px;
-      color:#aaa;
-      max-width:500px;
-      line-height:1.6;
+    .subtext {
+      font-size: 12px;
+      opacity: 0.6;
+      margin-bottom: 30px;
     }
 
-    .cta{
-      margin-top:30px;
-      display:inline-block;
-      background:#ff7a00;
-      color:#000;
-      padding:12px 22px;
-      text-decoration:none;
-      font-weight:600;
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
     }
 
-    .section{
-      max-width:1000px;
-      margin:60px auto;
-      padding:0 32px;
+    .links a {
+      color: white;
+      text-decoration: none;
+      opacity: 0.8;
     }
 
-    .section h3{
-      font-family:'Oswald',sans-serif;
-      margin-bottom:20px;
-      font-size:28px;
+    .links a:hover {
+      opacity: 1;
     }
 
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:20px;
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      opacity: 0.5;
     }
 
-    .card{
-      border:1px solid #222;
-      padding:20px;
-      background:#151515;
-    }
-
-    .card h4{
-      margin-bottom:10px;
-    }
-
-    .card p{
-      color:#aaa;
-      font-size:14px;
-    }
-
-    footer{
-      margin-top:80px;
-      padding:30px;
-      text-align:center;
-      border-top:1px solid #222;
-      color:#666;
-      font-size:13px;
-    }
   </style>
 </head>
 
 <body>
 
-<nav>
-  <h1>NOODLEZ3D</h1>
-  <div>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">NOODLEZ3D</div>
+    <div class="nav">
+      <div>SHOP</div>
+      <div>ARCHIVE</div>
+      <div>CONTACT</div>
+    </div>
   </div>
-</nav>
 
-<section class="hero">
-  <h2>3D PRINTED<br><span>CREATIVITY</span></h2>
-  <p>
-    Unique paintable toys, miniatures, and custom 3D prints designed for kids, creators, and collectors.
-  </p>
-  <a class="cta" href="#">Order Now</a>
-</section>
+  <!-- Center -->
+  <div class="center">
+    <div class="brand">NOODLEZ3D</div>
+    <div class="subtext">05/01/2026 • INDIA</div>
 
-<section class="section">
-  <h3>Products</h3>
-  <div class="grid">
-
-    <div class="card">
-      <h4>🐉 Dragon Kit</h4>
-      <p>Paintable dragon model for kids. Fun, creative, and screen-free activity.</p>
+    <div class="links">
+      <a href="#">new drop</a>
+      <a href="#">3d miniatures</a>
+      <a href="#">custom prints</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
     </div>
-
-    <div class="card">
-      <h4>🦖 Dino Set</h4>
-      <p>3D printed dinosaur figures ready to paint and customize.</p>
-    </div>
-
-    <div class="card">
-      <h4>🎨 Custom Prints</h4>
-      <p>We create custom 3D models for gifts, events, and creative projects.</p>
-    </div>
-
   </div>
-</section>
 
-<section class="section">
-  <h3>Why NOODLEZ3D?</h3>
-  <div class="grid">
-
-    <div class="card">
-      <h4>Safe Materials</h4>
-      <p>Non-toxic and kid-friendly prints.</p>
-    </div>
-
-    <div class="card">
-      <h4>Creative Learning</h4>
-      <p>Encourages imagination and hands-on fun.</p>
-    </div>
-
-    <div class="card">
-      <h4>Pan India Delivery</h4>
-      <p>We ship across India quickly and safely.</p>
-    </div>
-
+  <!-- Footer -->
+  <div class="footer">
+    instagram / whatsapp / email
   </div>
-</section>
-
-<footer>
-  © 2026 NOODLEZ3D · Made in India
-</footer>
 
 </body>
 </html>
